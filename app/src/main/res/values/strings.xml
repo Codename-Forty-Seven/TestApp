@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TESTTASK</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_internet">There is no internet connection</string>
+    <string name="hint_random_number">Enter any number</string>
+    <string name="get_random">Random</string>
+    <string name="search">Search</string>
+    <string name="try_again">Try again</string>
+    <string name="select_position">Select your position</string>
+    <string name="upload">Upload</string>
+    <string name="upload_photo">Upload your photo</string>
+    <string name="register_successful">User successfully registered</string>
+    <string name="email_busy">That email is already registered</string>
+    <string name="example_fact">7170 is a value of n for which s(n-1) = s(n+1)</string>
+</resources>

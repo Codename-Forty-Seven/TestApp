@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edInputTxtNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:ems="10"
+            android:fontFamily="@font/nunito_sans"
+            android:hint="@string/hint_random_number"
+            app:errorTextAppearance="@style/ErrorTextAppearance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edTxtNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                tools:text="1234" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnGetRandom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/nunito_sans"
+            android:text="@string/get_random"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+            app:layout_constraintStart_toStartOf="@+id/edInputTxtNumber"
+            app:layout_constraintTop_toBottomOf="@+id/edInputTxtNumber" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/nunito_sans"
+            android:text="@string/search"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="@+id/btnGetRandom"
+            app:layout_constraintEnd_toEndOf="@+id/edInputTxtNumber"
+            app:layout_constraintStart_toEndOf="@+id/btnGetRandom"
+            app:layout_constraintTop_toTopOf="@+id/btnGetRandom" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
